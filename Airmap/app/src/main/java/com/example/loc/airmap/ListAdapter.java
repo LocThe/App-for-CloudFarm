@@ -38,15 +38,15 @@ public class ListAdapter extends ArrayAdapter<Parameter> {
             TextView txt2 = (TextView) view.findViewById(R.id.textViewTemp);
             txt2.setText("Temp "+String.valueOf(p.Temp));
             txt2.setTextColor(Color.WHITE);
-            TextView txt3 = (TextView) view.findViewById(R.id.textViewLight);
-            txt3.setText("Light "+String.valueOf(p.Light));
-            txt3.setTextColor(Color.WHITE);
-            TextView txt4 = (TextView) view.findViewById(R.id.textViewHumi);
-            txt4.setText("Humi "+String.valueOf(p.Humi));
-            txt4.setTextColor(Color.WHITE);
-            TextView txt5 = (TextView) view.findViewById(R.id.textViewCO2);
-            txt5.setText("CO2 "+String.valueOf(p.CO2));
-            txt5.setTextColor(Color.WHITE);
+//            TextView txt3 = (TextView) view.findViewById(R.id.textViewLight);
+//            txt3.setText("Light "+String.valueOf(p.Light));
+//            txt3.setTextColor(Color.WHITE);
+//            TextView txt4 = (TextView) view.findViewById(R.id.textViewHumi);
+//            txt4.setText("Humi "+String.valueOf(p.Humi));
+//            txt4.setTextColor(Color.WHITE);
+//            TextView txt5 = (TextView) view.findViewById(R.id.textViewCO2);
+//            txt5.setText("CO2 "+String.valueOf(p.CO2));
+//            txt5.setTextColor(Color.WHITE);
 
         }
         return view;

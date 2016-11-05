@@ -7,15 +7,16 @@ package com.example.loc.airmap;
 public class Parameter {
         public String Time;
         public String Temp;
-        public String Light;
-        public String Humi;
-        public String CO2;
+//        public String Light;
+//        public String Humi;
+//        public String CO2;
 // phai theo thu tu trong activity_list_parameter
-    public Parameter(String time, String temp, String humi, String light, String CO2) {
+//    public Parameter(String time, String temp, String humi, String light, String CO2) {
+        public Parameter(String time, String temp) {
         Time = time;
-        Temp = temp;
-        Humi = humi;
-        Light = light;
-        this.CO2 = CO2;
+        this.Temp = temp;
+//        Humi = humi;
+//        Light = light;
+//        this.CO2 = CO2;
     }
 }

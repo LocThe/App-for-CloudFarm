@@ -56,77 +56,77 @@
         android:layout_marginTop="330dp"
         android:id="@+id/textView_trangthai" />
 
-    <TextView
-        android:text="Light"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="431dp"
-        android:layout_marginLeft="48dp"
-        android:id="@+id/textView_Light" />
+    <!--<TextView-->
+        <!--android:text="Light"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="431dp"-->
+        <!--android:layout_marginLeft="48dp"-->
+        <!--android:id="@+id/textView_Light" />-->
 
-    <TextView
-        android:text="Humi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="431dp"
-        android:layout_marginLeft="162dp"
-        android:id="@+id/textView_Humi" />
+    <!--<TextView-->
+        <!--android:text="Humi"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="431dp"-->
+        <!--android:layout_marginLeft="162dp"-->
+        <!--android:id="@+id/textView_Humi" />-->
 
-    <TextView
-        android:text="CO2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="431dp"
-        android:layout_marginLeft="274dp"
-        android:id="@+id/textView_C02" />
+    <!--<TextView-->
+        <!--android:text="CO2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="431dp"-->
+        <!--android:layout_marginLeft="274dp"-->
+        <!--android:id="@+id/textView_C02" />-->
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="391dp"
-        android:layout_marginLeft="25dp"
-        android:id="@+id/textView_Solight" />
+    <!--<TextView-->
+        <!--android:text="TextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="391dp"-->
+        <!--android:layout_marginLeft="25dp"-->
+        <!--android:id="@+id/textView_Solight" />-->
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="391dp"
-        android:layout_marginLeft="150dp"
-        android:id="@+id/textView_Sohumi" />
+    <!--<TextView-->
+        <!--android:text="TextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="391dp"-->
+        <!--android:layout_marginLeft="150dp"-->
+        <!--android:id="@+id/textView_Sohumi" />-->
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="391dp"
-        android:layout_marginLeft="252dp"
-        android:id="@+id/textView_Soco2" />
+    <!--<TextView-->
+        <!--android:text="TextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="391dp"-->
+        <!--android:layout_marginLeft="252dp"-->
+        <!--android:id="@+id/textView_Soco2" />-->
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="411dp"
-        android:layout_marginLeft="85dp"
-        android:id="@+id/textView_Dvlight" />
+    <!--<TextView-->
+        <!--android:text="TextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="411dp"-->
+        <!--android:layout_marginLeft="85dp"-->
+        <!--android:id="@+id/textView_Dvlight" />-->
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="411dp"
-        android:layout_marginLeft="190dp"
-        android:id="@+id/textView_Dvhumi" />
+    <!--<TextView-->
+        <!--android:text="TextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="411dp"-->
+        <!--android:layout_marginLeft="190dp"-->
+        <!--android:id="@+id/textView_Dvhumi" />-->
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="411dp"
-        android:layout_marginLeft="293dp"
-        android:id="@+id/textView_Dvco2" />
+    <!--<TextView-->
+        <!--android:text="TextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="411dp"-->
+        <!--android:layout_marginLeft="293dp"-->
+        <!--android:id="@+id/textView_Dvco2" />-->
 
     <ImageView
         android:layout_width="23dp"

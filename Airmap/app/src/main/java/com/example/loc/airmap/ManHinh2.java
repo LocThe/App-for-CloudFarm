@@ -27,14 +27,15 @@ import java.util.ArrayList;
 
 public class ManHinh2  extends AppCompatActivity {
     ListView lvThongSo;
-    String  tem, light, humi, co2, str2, str1, lasttime;
+    String  tem,  str2, str1, lasttime;
+//    String light, humi, co2;
     RelativeLayout mhp;
     TextView tv_Back;
 
     BarChart barChart;
     ArrayList<BarEntry> barEntries = new ArrayList<>();
     ArrayList<String> theDates = new ArrayList<>();
-    BarDataSet barDataSet = new BarDataSet(barEntries,"Humidity(%)");
+    BarDataSet barDataSet = new BarDataSet(barEntries,"Temperature(oC)");
 
 
 
@@ -65,9 +66,9 @@ public class ManHinh2  extends AppCompatActivity {
             public void onClick(View v) {
                 Intent mh1 = new Intent(ManHinh2.this, MainActivity.class);
                 mh1.putExtra("Temp", tem);
-                mh1.putExtra("Light", light);
-                mh1.putExtra("Humi", humi);
-                mh1.putExtra("c02", co2);
+//                mh1.putExtra("Light", light);
+//                mh1.putExtra("Humi", humi);
+//                mh1.putExtra("c02", co2);
                 mh1.putExtra("lasttime", str2);
 
                 startActivity(mh1);
@@ -78,7 +79,8 @@ public class ManHinh2  extends AppCompatActivity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                new ReadJSON().execute("http://lekienhust94.mybluemix.net/jsonOutput.php");
+                //new ReadJSON().execute("http://lekienhust94.mybluemix.net/jsonOutput.php");
+                new ReadJSON().execute("http://www.lekienhust94.16mb.com/json.php");
             }
         });
     }
@@ -103,28 +105,26 @@ public class ManHinh2  extends AppCompatActivity {
                 for (int i = mangJSON.length()-1; i >= 0; i--){
                     mangJSON.getJSONObject(i);
                     JSONObject time = mangJSON.getJSONObject(i);
-                    mangThongSo.add(new Parameter(
-                            time.getString("time"),
-                            time.getString("tem"),
-                            time.getString("humi"),
-                            time.getString("light"),
-                            time.getString("c02")));
+                    mangThongSo.add(new Parameter(time.getString("time"), time.getString("tem")));
+//                            time.getString("humi"),
+//                            time.getString("light"),
+//                            time.getString("c02")));
 
                     //Add humi vao chart co 7 gia tri
                     if(i==(mangJSON.length()- 1)){
-                        barEntries.add(new BarEntry(Float.valueOf(time.getString("humi")),0));}
+                        barEntries.add(new BarEntry(Float.valueOf(time.getString("tem")),0));}
                     if(i==(mangJSON.length()- 2)){
-                        barEntries.add(new BarEntry(Float.valueOf(time.getString("humi")),1));}
+                        barEntries.add(new BarEntry(Float.valueOf(time.getString("tem")),1));}
                     if(i==(mangJSON.length()- 3)){
-                        barEntries.add(new BarEntry(Float.valueOf(time.getString("humi")),2));}
+                        barEntries.add(new BarEntry(Float.valueOf(time.getString("tem")),2));}
                     if(i==(mangJSON.length()- 4)){
-                        barEntries.add(new BarEntry(Float.valueOf(time.getString("humi")),3));}
+                        barEntries.add(new BarEntry(Float.valueOf(time.getString("tem")),3));}
                     if(i==(mangJSON.length()- 5)){
-                        barEntries.add(new BarEntry(Float.valueOf(time.getString("humi")),4));}
+                        barEntries.add(new BarEntry(Float.valueOf(time.getString("tem")),4));}
                     if(i==(mangJSON.length()- 6)){
-                        barEntries.add(new BarEntry(Float.valueOf(time.getString("humi")),5));}
+                        barEntries.add(new BarEntry(Float.valueOf(time.getString("tem")),5));}
                     if(i==(mangJSON.length()- 7)){
-                        barEntries.add(new BarEntry(Float.valueOf(time.getString("humi")),6));}
+                        barEntries.add(new BarEntry(Float.valueOf(time.getString("tem")),6));}
 
                     if (i == (mangJSON.length()- 1)) {
                         tem = time.getString("tem");
@@ -132,9 +132,9 @@ public class ManHinh2  extends AppCompatActivity {
                         //ham lay kis tu thu 11 den ki tu thu 16 trong chuoi time :)
                         str1 = new String(lasttime);
                         str2 = str1.substring(11,16);
-                        light = time.getString("light");
-                        humi = time.getString("humi");
-                        co2 = time.getString("c02");
+//                        light = time.getString("light");
+//                        humi = time.getString("humi");
+//                        co2 = time.getString("c02");
                     }
 
                 }

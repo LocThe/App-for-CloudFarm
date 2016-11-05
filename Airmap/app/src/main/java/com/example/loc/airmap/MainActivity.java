@@ -13,9 +13,10 @@ import android.widget.Toast;
 
 //public class MainActivity extends AppCompatActivity implements ActionBarActivity {
 public class MainActivity extends ActionBarActivity {
-    TextView tv_Address, tv_Light, tv_Humi, tv_CO2, tv_trangthai, tv_Temperature, tv_CurentTemp, tv_HisTemp;
-    TextView tv_Solight,tv_Sohumi, tv_Soco2;
-    TextView tv_Dvlight, tv_Dvhumi,  tv_Dvco2;
+    TextView tv_Address, tv_trangthai, tv_Temperature, tv_CurentTemp, tv_HisTemp;
+//    TextView tv_Light, tv_Humi, tv_CO2;
+//    TextView tv_Solight,tv_Sohumi, tv_Soco2;
+//    TextView tv_Dvlight, tv_Dvhumi,  tv_Dvco2;
     TextView tv_lastUpdate, tv_timelast;
     RelativeLayout mh;
 
@@ -27,18 +28,19 @@ public class MainActivity extends ActionBarActivity {
         tv_Temperature = (TextView) findViewById(R.id.textView_Temperature);
         tv_CurentTemp= (TextView) findViewById(R.id.textView_CurrentTemp);
         tv_HisTemp = (TextView) findViewById(R.id.textView_HisTemp);
-        tv_Light =(TextView) findViewById(R.id.textView_Light);
-        tv_Humi =(TextView) findViewById(R.id.textView_Humi);
-        tv_CO2 =(TextView) findViewById(R.id.textView_C02);
         tv_trangthai =(TextView) findViewById(R.id.textView_trangthai);
+//        tv_Light =(TextView) findViewById(R.id.textView_Light);
+//        tv_Humi =(TextView) findViewById(R.id.textView_Humi);
+//        tv_CO2 =(TextView) findViewById(R.id.textView_C02);
 
-        tv_Solight =(TextView) findViewById(R.id.textView_Solight);
-        tv_Sohumi = (TextView) findViewById(R.id.textView_Sohumi);
-        tv_Soco2 =(TextView) findViewById(R.id.textView_Soco2);
-
-        tv_Dvlight =(TextView) findViewById(R.id.textView_Dvlight);
-        tv_Dvhumi = (TextView) findViewById(R.id.textView_Dvhumi);
-        tv_Dvco2 =(TextView) findViewById(R.id.textView_Dvco2);
+//
+//        tv_Solight =(TextView) findViewById(R.id.textView_Solight);
+//        tv_Sohumi = (TextView) findViewById(R.id.textView_Sohumi);
+//        tv_Soco2 =(TextView) findViewById(R.id.textView_Soco2);
+//
+//        tv_Dvlight =(TextView) findViewById(R.id.textView_Dvlight);
+//        tv_Dvhumi = (TextView) findViewById(R.id.textView_Dvhumi);
+//        tv_Dvco2 =(TextView) findViewById(R.id.textView_Dvco2);
 
         tv_lastUpdate=(TextView) findViewById(R.id.textView_lastUpdate);
         tv_timelast=(TextView) findViewById(R.id.textView_timelast);
@@ -61,17 +63,17 @@ public class MainActivity extends ActionBarActivity {
         tv_Temperature.setTextSize(25);
         tv_Temperature.setTextColor(Color.WHITE);
         //set text Light
-        tv_Light.setText("Light");
-        tv_Light.setTextColor(Color.WHITE);
-        tv_Light.setTextSize(16);
-        //set text Humi
-        tv_Humi.setText("Humi");
-        tv_Humi.setTextColor(Color.WHITE);
-        tv_Humi.setTextSize(16);
-        //set text CO2
-        tv_CO2.setText("C02");
-        tv_CO2.setTextColor(Color.WHITE);
-        tv_CO2.setTextSize(16);
+//        tv_Light.setText("Light");
+//        tv_Light.setTextColor(Color.WHITE);
+//        tv_Light.setTextSize(16);
+//        //set text Humi
+//        tv_Humi.setText("Humi");
+//        tv_Humi.setTextColor(Color.WHITE);
+//        tv_Humi.setTextSize(16);
+//        //set text CO2
+//        tv_CO2.setText("C02");
+//        tv_CO2.setTextColor(Color.WHITE);
+//        tv_CO2.setTextSize(16);
         //set text trang thai
         tv_trangthai.setText("Moderate");
         tv_trangthai.setTextColor(Color.WHITE);
@@ -86,29 +88,29 @@ public class MainActivity extends ActionBarActivity {
         tv_CurentTemp.setTextSize(150);
         tv_CurentTemp.setTextColor(Color.WHITE);
 
-        tv_Solight.setText("30");
-        tv_Solight.setTextSize(33);
-        tv_Solight.setTextColor(Color.WHITE);
-
-        tv_Sohumi.setText("30");
-        tv_Sohumi.setTextSize(33);
-        tv_Sohumi.setTextColor(Color.WHITE);
-
-        tv_Soco2.setText("30");
-        tv_Soco2.setTextSize(33);
-        tv_Soco2.setTextColor(Color.WHITE);
-
-        tv_Dvlight.setText("lx");
-        tv_Dvlight.setTextSize(14);
-        tv_Dvlight.setTextColor(Color.WHITE);
-
-        tv_Dvhumi.setText("%");
-        tv_Dvhumi.setTextSize(14);
-        tv_Dvhumi.setTextColor(Color.WHITE);
-
-        tv_Dvco2.setText("ppm");
-        tv_Dvco2.setTextSize(14);
-        tv_Dvco2.setTextColor(Color.WHITE);
+//        tv_Solight.setText("30");
+//        tv_Solight.setTextSize(33);
+//        tv_Solight.setTextColor(Color.WHITE);
+//
+//        tv_Sohumi.setText("30");
+//        tv_Sohumi.setTextSize(33);
+//        tv_Sohumi.setTextColor(Color.WHITE);
+//
+//        tv_Soco2.setText("30");
+//        tv_Soco2.setTextSize(33);
+//        tv_Soco2.setTextColor(Color.WHITE);
+//
+//        tv_Dvlight.setText("lx");
+//        tv_Dvlight.setTextSize(14);
+//        tv_Dvlight.setTextColor(Color.WHITE);
+//
+//        tv_Dvhumi.setText("%");
+//        tv_Dvhumi.setTextSize(14);
+//        tv_Dvhumi.setTextColor(Color.WHITE);
+//
+//        tv_Dvco2.setText("ppm");
+//        tv_Dvco2.setTextSize(14);
+//        tv_Dvco2.setTextColor(Color.WHITE);
 
         tv_lastUpdate.setText("Last update");
         tv_lastUpdate.setTextSize(15);
@@ -135,20 +137,20 @@ public class MainActivity extends ActionBarActivity {
             tv_CurentTemp.setTextSize(130);
             tv_CurentTemp.setTextColor(Color.WHITE);
 
-            String light = bd.getString("Light");
-            tv_Solight.setText(light);
-            tv_Solight.setTextSize(33);
-            tv_Solight.setTextColor(Color.WHITE);
-
-            String humi = bd.getString("Humi");
-            tv_Sohumi.setText(humi);
-            tv_Sohumi.setTextSize(33);
-            tv_Sohumi.setTextColor(Color.WHITE);
-
-            String c02 = bd.getString("c02");
-            tv_Soco2.setText(c02);
-            tv_Soco2.setTextSize(33);
-            tv_Soco2.setTextColor(Color.WHITE);
+//            String light = bd.getString("Light");
+//            tv_Solight.setText(light);
+//            tv_Solight.setTextSize(33);
+//            tv_Solight.setTextColor(Color.WHITE);
+//
+//            String humi = bd.getString("Humi");
+//            tv_Sohumi.setText(humi);
+//            tv_Sohumi.setTextSize(33);
+//            tv_Sohumi.setTextColor(Color.WHITE);
+//
+//            String c02 = bd.getString("c02");
+//            tv_Soco2.setText(c02);
+//            tv_Soco2.setTextSize(33);
+//            tv_Soco2.setTextColor(Color.WHITE);
 
             String str2 = bd.getString("lasttime");
             String str3 = str2.substring(0,2);//lay gio
