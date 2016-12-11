@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffc916"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:text="Du lieu cac thong so"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textViewAll"
+                        android:layout_weight="0.97"
+                        android:layout_height="20dp" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/listview_ThongSoAll"
+                        android:layout_height="453dp"
+                        android:layout_weight="0.34" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#da8200"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="Bieu do Nhiet do"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewChartTemp"
+                        android:layout_weight="0.97" />
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:id="@+id/bargraphTemp"></com.github.mikephil.charting.charts.BarChart>
+
+                    <TextView
+                        android:text="Du lieu cap nhat: "
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewListTemp"
+                        android:layout_weight="0.97" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:id="@+id/listview_ThongSoTemp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#5b89ff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="Bieu do Anh sang"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewChartLight"
+                        android:layout_weight="0.97" />
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:id="@+id/bargraphLight"></com.github.mikephil.charting.charts.BarChart>
+                    <TextView
+                        android:text="Du lieu cap nhat: "
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewListLight"
+                        android:layout_weight="0.97" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:id="@+id/listview_ThongSoLight" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#35f020"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="Bieu do Do am"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewChartHumi"
+                        android:layout_weight="0.97" />
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:id="@+id/bargraphHumi"></com.github.mikephil.charting.charts.BarChart>
+
+                    <TextView
+                        android:text="Du lieu cap nhat:"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewListHumi"
+                        android:layout_weight="0.97" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:id="@+id/listview_ThongSoHumi" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ff975b"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="Bieu do CO2"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewChartCO2"
+                        android:layout_weight="0.97" />
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:id="@+id/bargraphCO2"></com.github.mikephil.charting.charts.BarChart>
+
+                    <TextView
+                        android:text="Du lieu cap nhat: "
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewListCO2"
+                        android:layout_weight="0.97" />
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:id="@+id/listview_ThongSoCO2" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

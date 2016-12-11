@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_list_parameter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thanhnguyentung95.cloudfarm.ListParameter">
+
+    <TextView
+        android:text="Time"
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:textSize="20dp"
+        android:id="@+id/textViewTime" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textViewTime"
+        android:id="@+id/LineText">
+
+
+        <TextView
+            android:text="Temp"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTemp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="Light"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textLight"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="Humi"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textHumi"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="CO2"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textCO2"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/LineText"
+        android:id="@+id/LinePara">
+
+        <TextView
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTemp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewLight"
+            android:layout_weight="1" />
+
+        <TextView
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewHumi"
+            android:layout_weight="1" />
+
+        <TextView
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCO2"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+</RelativeLayout>

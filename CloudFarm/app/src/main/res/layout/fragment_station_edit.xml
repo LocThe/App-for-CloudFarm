@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="12dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#d9c7c7"
+    android:paddingLeft="12dp"
+    android:paddingRight="10dp">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editStationButton"
+        android:src="@drawable/flower"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="15dp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stationScrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/editStationButton"
+        android:layout_alignBottom="@+id/editStationButton"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/editStationButton" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:inputType="text"
+            android:id="@+id/editStationTitle"
+            />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stationScrollView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="4dp"
+        android:id="@+id/messageCrollView"
+        android:layout_above="@+id/saveStation"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="4dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="3"
+            android:text="New Text"
+            android:id="@+id/editStationDesc"
+            android:textSize="18sp"
+            android:textColor="#1a1818"
+            android:background="@null"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            />
+
+    </ScrollView>
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveStation"
+        android:text="@string/save_station_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/messageCrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/messageCrollView" />
+
+</RelativeLayout>

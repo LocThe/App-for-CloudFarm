@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CloudFarm</string>
+    <string name="main_act_loading">Loading</string>
+    <string name="main_board_tv">No information</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="viewFragmentTitle">View Station</string>
+    <string name="editFragmentTitle">Edit Station</string>
+    <string name="mainBoardTitle">MainBoard</string>
+    <string name="mainActivity"></string>
+
+    <!-- Main List Long Click context menu -->
+    <string name="edit_menu">Edit</string>
+    <string name="view_menu">View</string>
+    <string name="save_station_button">Save</string>
+    <string name="tab1Text">This is tab 1</string>
+    <string name="tab2Text">This is tab 2</string>
+    <string name="tab3Text">This is tab 3</string>
+    <string name="tab4Text">This is tab 4</string>
+    <string name="tab5Text">This is tab 5</string>
+    <string name="oktrue">true</string>
+</resources>
